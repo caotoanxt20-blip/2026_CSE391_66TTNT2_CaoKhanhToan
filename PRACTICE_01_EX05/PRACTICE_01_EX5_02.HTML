@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex05.css">
+</head>
+
+<body>
+    <nav class="nav2">
+        <h2>New Employee</h2>
+        <p>X</p>
+    </nav>
+    <form>
+        <table>
+            <tr>
+                <th>Full Name</th><br>
+                <td><input type="text" id="fullname" name="fullname" value=""></td>
+                <th>Email</th>
+                <td><input type="email" id="email" name="email" value=""></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td><input type="text" id="phone" name="phone" value=""></td>
+                <th>Position</th>
+                <td>
+                    <select>
+                        <option value="Manager">select position</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Manager">Manager</option>
+                        <option value="CEO">CEO</option>
+                    </select>
+                </td> 
+            </tr>
+            <tr>
+                <th>Sex</th>
+                <td><input type="radio" id="male" name="sex" value="male"> Male <br>
+                    <input type="radio" id="female" name="sex" value="female"> Female <br>
+                </td>
+            </tr>
+        </table>
+        <div class="button">
+            <button type="submit" class="save">Save</button>
+            <button type="button" class="cancel">Cancel</button>
+        </div>
+</body>
+
+</html>

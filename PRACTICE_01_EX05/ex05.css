@@ -1,0 +1,73 @@
+.nav {
+    display: flex; 
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    gap : 20px;
+}
+.a {
+    color: white;
+}
+.b {
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+}   
+.b p{
+    color:white; 
+    gap: 20px; 
+}
+.c {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.d {
+    display: flex;
+
+}
+.e {
+    color: white;
+    background-color: blue;
+    margin-left: auto;
+    height: 35px;
+    width: auto;
+}
+.f {
+    color: black;
+    background-color: yellow;
+    height: 30px;
+    width: auto;
+}
+.g {
+    color: white;
+    background-color: red;
+    height: 30px;
+    width: auto;
+}
+.list {
+    width: 100%;
+}
+.nav2{
+    background-color: blue;
+    color: white;
+    display: flex;
+}
+.nav2 p{
+    color: black;
+    margin-left: 410px;
+}
+.button{
+    display: flex;
+    gap: 10px;
+}
+.save{
+    background-color: green;
+    color: white;
+    margin-left: auto;
+}
+.cancel{
+    background-color: slategray;
+    color: white;
+}
