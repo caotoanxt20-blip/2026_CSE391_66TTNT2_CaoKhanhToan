@@ -1,0 +1,112 @@
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: absolute;
+  width: 100%;
+}
+
+#page-logo a {
+  font-size: 32px;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: yellow;
+  text-decoration: none;
+}
+
+
+#hero {
+  height: 50vh;
+  background: url("ocean.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#hero-content h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+}
+
+#hero-content p {
+  color: white;
+  margin: 15px 0 25px;
+  font-size: 18px;
+}
+
+#hero-content a {
+  background: yellow;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#hero-content a:hover {
+  background: orange;
+}
+
+
+
+#highlights {
+  background: linear-gradient(180deg, #c3f7f2, #edfdfb);
+  padding: 50px 0;
+  text-align: center;
+}
+
+#highlights h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+#destinations {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.destination img {
+  height: 200px;
+}
+
+.destination p {
+  padding: 15px;
+  font-size: 18px;
+}
+
+
+
+footer {
+  background: #111;
+  padding: 20px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer img {
+  width: 30px;
+}
