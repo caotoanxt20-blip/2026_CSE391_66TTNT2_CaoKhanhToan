@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form đăng ký nâng cấp</title>
+
+<style>
+
+body{
+font-family:Arial;
+}
+
+form{
+width:350px;
+}
+
+input{
+width:100%;
+padding:6px;
+margin-top:5px;
+}
+
+.error{
+color:red;
+font-size:13px;
+}
+
+.counter{
+font-size:13px;
+}
+
+.strength-bar{
+height:8px;
+background:#ddd;
+margin-top:5px;
+}
+
+.strength{
+height:8px;
+width:0%;
+}
+
+.weak{
+background:red;
+}
+
+.medium{
+background:orange;
+}
+
+.strong{
+background:green;
+}
+
+.eye{
+cursor:pointer;
+margin-left:5px;
+}
+
+.success{
+color:green;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Đăng ký tài khoản</h2>
+
+<form id="registerForm">
+
+<label>Họ và tên</label>
+<input id="fullname" maxlength="50">
+<div class="counter" id="nameCounter">0/50</div>
+<span class="error" id="fullnameError"></span>
+
+<label>Email</label>
+<input id="email">
+<span class="error" id="emailError"></span>
+
+<label>Số điện thoại</label>
+<input id="phone">
+<span class="error" id="phoneError"></span>
+
+<label>Mật khẩu</label>
+<div style="display:flex">
+<input type="password" id="password">
+<span class="eye" id="togglePass">👁</span>
+</div>
+
+<div class="strength-bar">
+<div id="strength" class="strength"></div>
+</div>
+
+<span class="error" id="passwordError"></span>
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirm">
+<span class="error" id="confirmError"></span>
+
+<label>Giới tính</label>
+<br>
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+<span class="error" id="genderError"></span>
+
+<br><br>
+
+<input type="checkbox" id="terms"> Tôi đồng ý điều khoản
+<span class="error" id="termsError"></span>
+
+<br><br>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<div id="successMsg"></div>
+<script src="DevelopEx_02.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Manager</title>
+
+<style>
+
+body{
+font-family: Arial;
+}
+
+table{
+border-collapse: collapse;
+width:650px;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #000;
+padding:6px;
+text-align:center;
+}
+
+.low{
+background:yellow;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Quản lý điểm sinh viên</h2>
+
+<input id="nameInput" placeholder="Họ tên">
+<input id="scoreInput" type="number" placeholder="Điểm (0-10)">
+<button id="addBtn">Thêm</button>
+
+<br><br>
+
+<input id="searchInput" placeholder="Tìm kiếm">
+
+<select id="filterSelect">
+<option value="all">Tất cả</option>
+<option value="Giỏi">Giỏi</option>
+<option value="Khá">Khá</option>
+<option value="Trung bình">Trung bình</option>
+<option value="Yếu">Yếu</option>
+</select>
+
+<table>
+
+<thead>
+
+<tr>
+<th>STT</th>
+<th>Họ tên</th>
+<th id="scoreHeader">Điểm</th>
+<th>Xếp loại</th>
+<th>Thao tác</th>
+</tr>
+
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+<p id="stats"></p>
+<script src="EX_01.JS"></script>
+</body>
+</html>

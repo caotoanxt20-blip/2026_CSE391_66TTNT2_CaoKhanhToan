@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Đăng Ký</title>
+
+<style>
+
+body{
+font-family: Arial;
+}
+
+form{
+width:350px;
+}
+
+input{
+width:100%;
+padding:6px;
+margin-top:5px;
+}
+
+.error{
+color:red;
+font-size:13px;
+display:block;
+}
+
+.success{
+color:green;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Đăng ký tài khoản</h2>
+
+<form id="registerForm">
+
+<label>Họ và tên</label>
+<input id="fullname">
+<span class="error" id="fullnameError"></span>
+
+<label>Email</label>
+<input id="email">
+<span class="error" id="emailError"></span>
+
+<label>Số điện thoại</label>
+<input id="phone">
+<span class="error" id="phoneError"></span>
+
+<label>Mật khẩu</label>
+<input type="password" id="password">
+<span class="error" id="passwordError"></span>
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirm">
+<span class="error" id="confirmError"></span>
+
+<label>Giới tính</label>
+<br>
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+<span class="error" id="genderError"></span>
+
+<br><br>
+
+<input type="checkbox" id="terms"> Tôi đồng ý điều khoản
+<span class="error" id="termsError"></span>
+
+<br><br>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<div id="successMsg"></div>
+<script src="Ex_2.1.js"></script>
+</body>
+</html>

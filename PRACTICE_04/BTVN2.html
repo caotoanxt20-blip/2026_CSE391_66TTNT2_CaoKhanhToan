@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Multi Step Form</title>
+
+<style>
+
+body{
+font-family:Arial;
+}
+
+.container{
+width:400px;
+margin:auto;
+}
+
+.step{
+display:none;
+}
+
+.active{
+display:block;
+}
+
+.progress{
+width:100%;
+background:#ddd;
+height:10px;
+margin-bottom:20px;
+}
+
+.bar{
+height:10px;
+width:33%;
+background:green;
+}
+
+.error{
+color:red;
+font-size:13px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Đăng ký tài khoản</h2>
+
+<div class="progress">
+<div id="bar" class="bar"></div>
+</div>
+
+<form id="form">
+
+
+<div class="step active" id="step1">
+
+<h3>Bước 1: Thông tin cá nhân</h3>
+
+<label>Họ tên</label>
+<input id="fullname">
+<span class="error" id="fullnameError"></span>
+
+<label>Ngày sinh</label>
+<input type="date" id="dob">
+<span class="error" id="dobError"></span>
+
+<label>Giới tính</label>
+<br>
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+<span class="error" id="genderError"></span>
+
+<br><br>
+
+<button type="button" onclick="nextStep1()">Tiếp theo</button>
+
+</div>
+
+
+<div class="step" id="step2">
+
+<h3>Bước 2: Thông tin tài khoản</h3>
+
+<label>Email</label>
+<input id="email">
+<span class="error" id="emailError"></span>
+
+<label>Mật khẩu</label>
+<input type="password" id="password">
+<span class="error" id="passwordError"></span>
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirm">
+<span class="error" id="confirmError"></span>
+
+<br><br>
+
+<button type="button" onclick="prevStep(1)">Quay lại</button>
+<button type="button" onclick="nextStep2()">Tiếp theo</button>
+
+</div>
+
+
+
+<div class="step" id="step3">
+
+<h3>Bước 3: Xác nhận thông tin</h3>
+
+<div id="summary"></div>
+
+<br>
+
+<button type="button" onclick="prevStep(2)">Quay lại</button>
+<button type="submit">Hoàn tất</button>
+
+</div>
+
+</form>
+
+<div id="success"></div>
+
+</div>
+<script src="BTVN2.js"></script>
+</html>
